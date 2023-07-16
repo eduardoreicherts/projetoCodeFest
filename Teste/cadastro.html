@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Famílias</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <section class="cadastro">
+            <h2>Cadastro Ajuda Familiar</h2>
+            <div id="formulario-cadastro" >
+                <div class="dados">
+                    <legend><b>Informações pessoais</b></legend><br>
+                
+                    <label for="nome">Nome:</label>
+                    <input type="text" id ='nome' name="nome" placeholder="Digite seu nome">
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF"><br>
+
+                    <label for="rg">RG:</label>
+                    <input type="text" id="rg" name="rg" placeholder="Digite seu RG">
+
+                    <label for="dtNascimento">Data de Nascimento:</label>
+                    <input type="date"  id="dtNascimento"><br>
+
+                    <label for="dtOcupacao">Ocupação:</label>
+                    <input type="text" id='dtOcupacao' name="dtOcupacao" placeholder="Digite sua profissão"><br>
+
+                </div>
+
+                <div class="dados">
+                    <legend><b>Dados para contato</b></legend><br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Ex.: abcd@gmail.com">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" placeholder="Ex.: (51)98765-4321">
+                </div>
+
+                <div id='dados-familiares' class="dados">
+                
+
+                    <label for="nMembros">Quantos pessoas moram com você?</label>
+                    <input type="text" id='nMembros' name="nMembros" placeholder="Digite o número de pessoas">
+                    
+                    <button id="btCadastrarMembros">Cadastrar</button><br>
+                </div>
+
+                <div class="dados">
+                    <legend><b>Endereço</b></legend><br>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" placeholder="Preencha com CEP">
+
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" placeholder="Digite o N° da residência"><br>
+
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" placeholder="Digite o Bairro"><br>
+
+                </div>
+
+                <div class="dados">
+                    <div class="tipoAjuda">
+
+                        <legend>Quais foram os danos sofridos pela enchente?</legend>
+                        <input type="radio" id="leve" name="nivel" value="Leve" >
+                        <label for="Leve">Danos leves</label><br>
+                     
+                        <input type="radio" id="grave" name="nivel" value="Grave" >
+                        <label for="grave">Danos graves</label><br>
+ 
+                        <input type="radio" id="critico" name="nivel" value="Critico" >
+                        <label for="critico">Danos críticos</label><br>
+
+                        <legend>Como está o estado atual da sua casa?</legend>
+                        <input type="text" id="estado" name="estado" placeholder="Descreva o estado da sua casa">
+
+
+                        <legend>Quais são as necessidades de reparos?</legend>
+                        <input type="text" id="necessidades" name="necessidades" placeholder="Descreva as necessidades">
+
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Limpar</button>
+                    <button id="enviar" type="button">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
